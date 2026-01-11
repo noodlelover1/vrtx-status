@@ -8,15 +8,15 @@ html {
   flex-direction: column;
 }
 body {
-  background-color: #f5f6f8;
-  color: #3b3b3b;
+  background-color: #121212;
+  color: #e0e0e0;
   font-size: 14px;
   font-weight: 300;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Helvetica Neue", "Ubuntu", sans-serif;
   line-height: 22px;
   margin: 0;
-  padding: 96px 20px;
+  padding: 20px 20px;
   text-align: center;
   transition: opacity 0.3s;
 }
@@ -108,16 +108,18 @@ footer a {
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
+  text-align: left;
 }
 
 .headline {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .headline span {
-  background-color: #f5f6f8;
+  background-color: #1e1e1e;
   border-radius: 5px;
   padding: 6px;
   margin-left: 12px;
@@ -132,11 +134,12 @@ footer a {
 }
 
 .statusContainer {
-  border: 1px solid #ededed;
+  border: 1px solid #2a2a2a;
   border-radius: 5px;
   padding-top: 20px;
   text-align: left;
   padding: 24px;
+  background-color: #1e1e1e;
 }
 
 .statusContainer + .statusContainer {
@@ -291,6 +294,181 @@ footer a {
   margin-top: 16px;
 }
 
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #f5f6f8;
+    color: #3b3b3b;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #3b3b3b;
+  }
+
+  a {
+    color: #194b7d;
+  }
+
+  .outlineButton,
+  .button,
+  button {
+    background-color: #194b7d;
+    color: #fff;
+  }
+
+  footer {
+    color: #9c9c9c;
+  }
+
+  .headline span {
+    background-color: #f5f6f8;
+  }
+
+  .statusContainer {
+    border-color: #ededed;
+    background-color: #fff;
+  }
+
+  .statusContainer + .statusContainer {
+    border-top-color: #eee;
+  }
+
+  .statusHeadline {
+    color: #eee;
+  }
+
+  .statusUptime {
+    color: #7c7c7c;
+  }
+
+  .uptimeContainer {
+    color: #999;
+  }
+
+  .uptimeContainer hr {
+    border-top-color: #eee;
+  }
+
+  .tooltip {
+    background-color: #fff;
+    color: #3b3b3b;
+  }
+
+  .tooltip .tooltipArrow {
+    border-bottom-color: #fff;
+  }
+
+  .tooltip .tooltipDateTime {
+    color: #7c7c7c;
+  }
+
+  .tooltip .tooltipDescription {
+    color: #181818;
+  }
+
+  .tooltip hr {
+    border-top-color: #ededed;
+  }
+
+  .nodata {
+    background-color: #f8f8f8;
+    color: #ccc;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #e0e0e0;
+  }
+
+  a {
+    color: #6bb3e0;
+  }
+
+  .outlineButton,
+  .button,
+  button {
+    background-color: #6bb3e0;
+    color: #121212;
+  }
+
+  footer {
+    color: #888;
+  }
+
+  .pageContainer {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .headline span {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+
+  .statusContainer {
+    border-color: #2a2a2a;
+    background-color: #1e1e1e;
+  }
+
+  .statusContainer + .statusContainer {
+    border-top-color: #2a2a2a;
+  }
+
+  .statusUptime {
+    color: #999;
+  }
+
+  .uptimeContainer {
+    color: #888;
+  }
+
+  .uptimeContainer hr {
+    border-top-color: #2a2a2a;
+  }
+
+  .tooltip {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+
+  .tooltip .tooltipArrow {
+    border-bottom-color: #1e1e1e;
+  }
+
+  .tooltip .tooltipDateTime {
+    color: #999;
+  }
+
+  .tooltip .tooltipDescription {
+    color: #e0e0e0;
+  }
+
+  .tooltip hr {
+    border-top-color: #2a2a2a;
+  }
+
+  .nodata {
+    background-color: #3a3a3a;
+    color: #888;
+  }
+}
+
 @media screen and (max-width: 800px) {
   body {
     padding: 20px;
@@ -321,98 +499,5 @@ footer a {
   .statusSquare {
     min-width: 4px;
     width: 100%;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #1a1a1a;
-    color: #e0e0e0;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: #e0e0e0;
-  }
-
-  a {
-    color: #6bb3e0;
-  }
-
-  .outlineButton,
-  .button,
-  button {
-    background-color: #6bb3e0;
-    color: #1a1a1a;
-  }
-
-  footer {
-    color: #888;
-  }
-
-  .pageContainer {
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .headline span {
-    background-color: #3a3a3a;
-    color: #e0e0e0;
-  }
-
-  .statusContainer {
-    border-color: #3a3a3a;
-    background-color: #2a2a2a;
-  }
-
-  .statusHeadline {
-    color: #333;
-  }
-
-  .statusContainer + .statusContainer {
-    border-top-color: #3a3a3a;
-  }
-
-  .statusUptime {
-    color: #999;
-  }
-
-  .uptimeContainer {
-    color: #888;
-  }
-
-  .uptimeContainer hr {
-    border-top-color: #3a3a3a;
-  }
-
-  .tooltip {
-    background-color: #2a2a2a;
-    color: #e0e0e0;
-  }
-
-  .tooltip .tooltipArrow {
-    border-bottom-color: #2a2a2a;
-  }
-
-  .tooltip .tooltipDateTime {
-    color: #999;
-  }
-
-  .tooltip .tooltipDescription {
-    color: #e0e0e0;
-  }
-
-  .tooltip hr {
-    border-top-color: #3a3a3a;
-  }
-
-  .nodata {
-    background-color: #3a3a3a;
-    color: #888;
   }
 }
