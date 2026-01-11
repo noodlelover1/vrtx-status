@@ -8,8 +8,8 @@ html {
   flex-direction: column;
 }
 body {
-  background-color: #0a0a0a;
-  color: #c0c0c0;
+  background-color: #0a0a0e;
+  color: #a8a8a8;
   font-size: 14px;
   font-weight: 300;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
@@ -19,6 +19,268 @@ body {
   padding: 10px 20px;
   text-align: center;
   transition: opacity 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #c8c8c8;
+  font-weight: bold;
+}
+
+a {
+  color: #4a8ab9;
+  text-decoration: none;
+}
+
+.outlineButton,
+.button,
+button {
+  background-color: #4a8ab9;
+  border: none;
+  border-radius: 8px;
+  color: #0a0a0e;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 16px;
+  white-space: nowrap;
+}
+
+footer {
+  color: #555;
+  margin: 40px;
+}
+
+footer a {
+  font-weight: bold;
+}
+
+.pageContainer {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.headline span {
+  background-color: #0e0e12;
+  border-radius: 5px;
+  padding: 6px;
+  margin-left: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #c8c8c8;
+}
+
+.reportContainer {
+  margin: 30px auto;
+  width: 100%;
+}
+
+.statusContainer {
+  border: 1px solid #121216;
+  border-radius: 5px;
+  padding-top: 20px;
+  text-align: left;
+  padding: 24px;
+  background-color: #0e0e12;
+}
+
+.statusContainer + .statusContainer {
+  border-top: 1px solid #121216;
+  margin-top: 30px;
+}
+
+.statusStreamContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.statusSquare {
+  border-radius: 3px;
+  height: 30px;
+  min-width: 8px;
+  width: 100%;
+}
+
+.statusSquare + .statusSquare {
+  margin-left: 6px;
+}
+
+.sectionUrl {
+  font-size: 14px;
+}
+
+.statusTitle {
+  text-transform: uppercase;
+}
+
+.statusHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.statusSubtitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.statusHeadline {
+  color: #0a0a0e;
+  padding: 4px 8px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 12px;
+}
+
+.statusUptime {
+  flex: 1;
+  text-align: right;
+  color: #666;
+  font-size: 12px;
+}
+
+.uptimeContainer {
+  color: #555;
+  display: flex;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.uptimeContainer hr {
+  border: none;
+  border-top: 1px dashed #121216;
+  width: 100%;
+  margin: 10px;
+}
+
+.success {
+  background-color: #3d8c40;
+  color: #fff;
+}
+
+.failure {
+  background-color: #c73e3a;
+  color: #fff;
+}
+
+.nodata {
+  background-color: #121216;
+  color: #444;
+}
+
+.partial {
+  background-color: #cc7a00;
+  color: #fff;
+}
+
+.tooltip {
+  background-color: #0e0e12;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  color: #a8a8a8;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 16px;
+  position: absolute;
+  text-align: left;
+  z-index: 100;
+  width: 240px;
+  transition: opacity 0.2s;
+}
+
+.tooltip .tooltipArrow {
+  position: absolute;
+  bottom: 100%;
+  width: 4px;
+  text-align: center;
+  border: 4px solid transparent;
+  border-bottom-color: #0e0e12;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.tooltip .tooltipDateTime {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.tooltip .tooltipKey {
+  color: #444;
+  font-size: 10px;
+}
+
+.tooltip .tooltipDescription {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #c8c8c8;
+}
+
+.tooltip #tooltipStatus {
+  padding: 4px 8px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+.tooltip hr {
+  border: none;
+  border-top: 1px solid #121216;
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 20px;
+  }
+
+  .statusHeader,
+  .statusSubtitle {
+    display: block;
+  }
+
+  .statusHeadline,
+  .sectionUrl,
+  .statusUptime {
+    margin-left: 0;
+    margin-top: 8px;
+    text-align: left;
+  }
+
+  .statusTitle,
+  .statusHeadline {
+    display: inline-block;
+  }
+
+  .statusSquare + .statusSquare {
+    margin-left: 1px;
+  }
+
+  .statusSquare {
+    min-width: 4px;
+    width: 100%;
+  }
 }
 h1,
 h2,
@@ -119,13 +381,14 @@ footer a {
 }
 
 .headline span {
-  background-color: #141414;
+  background-color: #eee;
   border-radius: 5px;
   padding: 6px;
   margin-left: 12px;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #222;
 }
 
 .reportContainer {
@@ -226,8 +489,8 @@ footer a {
 }
 
 .nodata {
-  background-color: #f8f8f8;
-  color: #ccc;
+  background-color: #eee;
+  color: #999;
 }
 
 .partial {
@@ -239,7 +502,7 @@ footer a {
   background-color: #fff;
   box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  color: #3b3b3b;
+  color: #222;
   font-size: 12px;
   line-height: 18px;
   padding: 16px;
@@ -263,20 +526,20 @@ footer a {
 
 .tooltip .tooltipDateTime {
   font-size: 12px;
-  color: #7c7c7c;
+  color: #666;
   text-transform: uppercase;
   font-weight: 600;
 }
 
 .tooltip .tooltipKey {
-  color: #ccc;
+  color: #999;
   font-size: 10px;
 }
 
 .tooltip .tooltipDescription {
   margin-top: 12px;
   font-size: 14px;
-  color: #181818;
+  color: #222;
 }
 
 .tooltip #tooltipStatus {
@@ -296,8 +559,8 @@ footer a {
 
 @media (prefers-color-scheme: light) {
   body {
-    background-color: #f5f6f8;
-    color: #3b3b3b;
+    background-color: #f8f8f8;
+    color: #222;
   }
 
   h1,
@@ -306,30 +569,31 @@ footer a {
   h4,
   h5,
   h6 {
-    color: #3b3b3b;
+    color: #222;
   }
 
   a {
-    color: #194b7d;
+    color: #0066cc;
   }
 
   .outlineButton,
   .button,
   button {
-    background-color: #194b7d;
+    background-color: #0066cc;
     color: #fff;
   }
 
   footer {
-    color: #9c9c9c;
+    color: #666;
   }
 
   .headline span {
-    background-color: #f5f6f8;
+    background-color: #eee;
+    color: #222;
   }
 
   .statusContainer {
-    border-color: #ededed;
+    border-color: #ddd;
     background-color: #fff;
   }
 
@@ -338,15 +602,15 @@ footer a {
   }
 
   .statusHeadline {
-    color: #eee;
+    color: #fff;
   }
 
   .statusUptime {
-    color: #7c7c7c;
+    color: #666;
   }
 
   .uptimeContainer {
-    color: #999;
+    color: #888;
   }
 
   .uptimeContainer hr {
@@ -355,7 +619,7 @@ footer a {
 
   .tooltip {
     background-color: #fff;
-    color: #3b3b3b;
+    color: #222;
   }
 
   .tooltip .tooltipArrow {
@@ -363,26 +627,26 @@ footer a {
   }
 
   .tooltip .tooltipDateTime {
-    color: #7c7c7c;
+    color: #666;
   }
 
   .tooltip .tooltipDescription {
-    color: #181818;
+    color: #222;
   }
 
   .tooltip hr {
-    border-top-color: #ededed;
+    border-top-color: #ddd;
   }
 
   .nodata {
-    background-color: #f8f8f8;
-    color: #ccc;
+    background-color: #eee;
+    color: #999;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #0a0a0a;
+    background-color: #0a0a0e;
     color: #c0c0c0;
   }
 
