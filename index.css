@@ -8,15 +8,15 @@ html {
   flex-direction: column;
 }
 body {
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #0a0a0a;
+  color: #c0c0c0;
   font-size: 14px;
   font-weight: 300;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Helvetica Neue", "Ubuntu", sans-serif;
   line-height: 22px;
   margin: 0;
-  padding: 20px 20px;
+  padding: 10px 20px;
   text-align: center;
   transition: opacity 0.3s;
 }
@@ -119,7 +119,7 @@ footer a {
 }
 
 .headline span {
-  background-color: #1e1e1e;
+  background-color: #141414;
   border-radius: 5px;
   padding: 6px;
   margin-left: 12px;
@@ -134,12 +134,12 @@ footer a {
 }
 
 .statusContainer {
-  border: 1px solid #2a2a2a;
+  border: 1px solid #1a1a1a;
   border-radius: 5px;
   padding-top: 20px;
   text-align: left;
   padding: 24px;
-  background-color: #1e1e1e;
+  background-color: #141414;
 }
 
 .statusContainer + .statusContainer {
@@ -382,8 +382,8 @@ footer a {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #0a0a0a;
+    color: #c0c0c0;
   }
 
   h1,
@@ -392,22 +392,22 @@ footer a {
   h4,
   h5,
   h6 {
-    color: #e0e0e0;
+    color: #c0c0c0;
   }
 
   a {
-    color: #6bb3e0;
+    color: #5a9bc9;
   }
 
   .outlineButton,
   .button,
   button {
-    background-color: #6bb3e0;
-    color: #121212;
+    background-color: #5a9bc9;
+    color: #0a0a0a;
   }
 
   footer {
-    color: #888;
+    color: #666;
   }
 
   .pageContainer {
@@ -417,55 +417,55 @@ footer a {
   }
 
   .headline span {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
+    background-color: #141414;
+    color: #c0c0c0;
   }
 
   .statusContainer {
-    border-color: #2a2a2a;
-    background-color: #1e1e1e;
+    border-color: #1a1a1a;
+    background-color: #141414;
   }
 
   .statusContainer + .statusContainer {
-    border-top-color: #2a2a2a;
+    border-top-color: #1a1a1a;
   }
 
   .statusUptime {
-    color: #999;
+    color: #777;
   }
 
   .uptimeContainer {
-    color: #888;
+    color: #666;
   }
 
   .uptimeContainer hr {
-    border-top-color: #2a2a2a;
+    border-top-color: #1a1a1a;
   }
 
   .tooltip {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
+    background-color: #141414;
+    color: #c0c0c0;
   }
 
   .tooltip .tooltipArrow {
-    border-bottom-color: #1e1e1e;
+    border-bottom-color: #141414;
   }
 
   .tooltip .tooltipDateTime {
-    color: #999;
+    color: #777;
   }
 
   .tooltip .tooltipDescription {
-    color: #e0e0e0;
+    color: #c0c0c0;
   }
 
   .tooltip hr {
-    border-top-color: #2a2a2a;
+    border-top-color: #1a1a1a;
   }
 
   .nodata {
-    background-color: #3a3a3a;
-    color: #888;
+    background-color: #1a1a1a;
+    color: #555;
   }
 }
 
